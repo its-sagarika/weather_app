@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /*background:linear-gradient(rgb(47,150,163),rgb(49, 65, 151)) ;*/
+  background-image: url("/assets/clear\ sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family:  sans-serif;
+  color: rgb(27, 26, 26);
+}
+
+.app{
+  background-color: rgba(197, 197, 197,0.3);
+  padding: 10px;
+  color: black; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.location  {
+  height: 30vh;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature{
+  height: 20vh;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.location input.city {
+  width: 80%;
+  height: 20%;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+
+.location input.city::placeholder , input.city , input.submit{
+  color:black;
+  font-size: 20px; 
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.location input.city{
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.location input.submit {
+  width: 20%;
+  height: 20%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(rgb(47,150,163),rgb(49, 65, 151));
+}
+
+.cityname{
+  color: black; 
+  font:normal 500 40px/60px ;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+.temperature{
+  flex-direction: column;
+  background-color:rgba(197, 197, 197,0.3);
+}
+
+.min-max{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.degree-section{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.degree-section span{
+  /* margin: 10px; */
+  font-size: 20px;
+}
+
+.degree-section h2{
+  font-size: 30px;
+}
+
+.temperature-description{
+  margin-top: 0;
+  font:bold 500 30px/40px ;
+  font-family:'Times New Roman', Times, serif;
+}
